@@ -14,7 +14,7 @@
 }
 .header .image img{
   width: 250px;
-  height: 250px;
+  height: 275px;
   margin: 20px auto;
   overflow: hidden;
   border-style: outset;
@@ -43,7 +43,7 @@ h2{
 }
 .container .bottom h2{
     background-color: #007bff;
-    width: 740px;
+    width: auto;
     padding: 15px;
     color: #fff;
     font-size: 20px;
@@ -117,4 +117,34 @@ footer {
 /* Efek hover pada tautan media sosial */
 .social-media a:hover {
   text-decoration: underline; /* Garis bawah saat dihover */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.container {
+		width: 95%;
+		height: auto;
+	}
+	h2 {
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.main {
+		flex-direction: column;
+	}
+	.left, .right {
+		flex: none;
+		width: 100%;
+	}
+	.container {
+		width: 95%;
+		height: auto;
+	}
+	h2 {
+		font-size: 15px;
+	}
+
+  .bottom h2{
+    font-size: 15px;
+  }
 }
