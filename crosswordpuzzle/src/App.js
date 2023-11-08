@@ -67,7 +67,7 @@ function App() {
     <Router>
     <Switch>
       <Route exact path="/" component={LandingPage} />
-      <Route path="/crosswordpuzzle" component={ProyekReact} />
+      <Route path="/crosswordpuzzle" component={crosswordpuzzle} />
     {/* Tambahkan rute-rute lain di sini sesuai kebutuhan */}
   <div className="container">
     <div className="row">
