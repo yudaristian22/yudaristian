@@ -1,9 +1,5 @@
 import React, {useState} from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import LandingPage from './index.html'; // Landing Page component
-import crosswordpuzzle from './crosswordpuzzle'; // Proyek React component
-
 
 function App() {
   const [answers, setAnswers] = useState({
@@ -64,12 +60,7 @@ function App() {
   };
 
   return (
-    <Router>
-    <Switch>
-      <Route exact path="/" component={LandingPage} />
-      <Route path="/crosswordpuzzle" component={crosswordpuzzle} />
-    {/* Tambahkan rute-rute lain di sini sesuai kebutuhan */}
-  <div className="container">
+    <div className="container">
     <div className="row">
       <div className="col align-self-center">
         <h4>Mendatar</h4>
@@ -346,8 +337,7 @@ function App() {
       </div>
     </div>
   </div>
-  </Switch>
-</Router>  
+  
 
   );
 }
